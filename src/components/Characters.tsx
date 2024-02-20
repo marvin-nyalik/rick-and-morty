@@ -6,6 +6,7 @@ export const CharacterList: React.FC<{locations: LocationsData}> = ({locations})
   return(
     <>
       <div>
+      <h4 className="mx-auto max-w-[90%] text-sm font-semibold italic">Total Location Results: {locations.results.length}</h4>
       {locations.results.map((location, index) => (
         <div key={index} className='flex flex-col md:flex-row space-x-2 space-y-3 mx-auto max-w-[90%] border-b border-gray-200 my-3'>
           <div className='flex flex-col'>

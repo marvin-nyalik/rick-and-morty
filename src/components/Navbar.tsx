@@ -38,8 +38,8 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   className={clsx("px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75",
-                  {'text-orange-500 bg-pink-200 rounded-full': pathname === '/locations'})}
-                  href="/locations"
+                  {'text-orange-500 bg-pink-200 rounded-full': pathname === '/'})}
+                  href="/"
                 >
                   <i className="fa fa-globe text-lg leading-lg text-white hover:text-gray-700 opacity-75"></i><span className="ml-2">Locations</span>
                 </Link>

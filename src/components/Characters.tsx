@@ -25,7 +25,7 @@ export const CharacterList: React.FC<{locations: LocationsData}> = ({locations})
                   image: resident.image,
                   episodes: resident.episode.map(episode => episode.name).join("|"),
                 }
-              }}>
+              }} key={residentIndex}>
               <div key={residentIndex} className='space-y-2 w-full my-3'>
                 <Image
                 src={resident.image}
